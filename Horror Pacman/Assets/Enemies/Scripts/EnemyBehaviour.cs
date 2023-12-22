@@ -8,11 +8,11 @@ using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
 {
-    public Enemy enemy { get; private set; }
+    protected Enemy enemy { get; private set; }
 
-    public GridManager gridManager { get; private set; }
-    public PathFinder pathFinder { get; private set; }
-    public GameManagerScript gameManager { get; private set; }
+    protected GridManager gridManager { get; private set; }
+    protected PathFinder pathFinder { get; private set; }
+    protected GameManagerScript gameManager { get; private set; }
 
 
     private void Awake()
